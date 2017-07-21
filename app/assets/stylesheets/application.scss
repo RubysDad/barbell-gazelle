@@ -1,7 +1,8 @@
 @import 'bootstrap';
+@import 'font_awesome';
 
 
-.heading-font {
+/*.heading-font {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
@@ -13,14 +14,14 @@
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   text-transform: uppercase;
   letter-spacing: 2px;
-}
+}*/
 html,
 body {
   height: 100%;
   width: 100%;
 }
 body {
-  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
 }
 a {
   -webkit-transition: all 0.35s;
@@ -47,7 +48,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Gilda Display', serif;
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -62,12 +63,12 @@ p {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Cinzel Decorative', cursive;
   font-weight: 200;
   letter-spacing: 1px;
 }
 .navbar-default .navbar-header .navbar-brand {
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Cinzel Decorative', cursive;
   font-weight: 200;
   letter-spacing: 1px;
   color: #fdcc52;
@@ -149,11 +150,11 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url("/assets/new_age/bg-swim.jpg"), #7b4397;
+  background: image-url("bg-swim.jpg"), #7b4397;
   /* fallback for old browsers */
-  background: url("/assets/new_age/bg-swim.jpg"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
+  background: image-url("bg-swim.jpg"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: url("/assets/new_age/bg-swim.jpg"), linear-gradient(to left, #7b4397, #dc2430);
+  background: image-url("bg-swim.jpg"), linear-gradient(to left, #7b4397, #dc2430);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
 }
@@ -168,9 +169,10 @@ header .header-content .header-content-inner {
   margin: 0 auto;
 }
 header .header-content .header-content-inner h1 {
-  margin-top: 0;
+  margin-top: 70px;
   margin-bottom: 30px;
   font-size: 30px;
+  color: #52ebfd;
 }
 header .header-content .header-content-inner .list-badges {
   margin-bottom: 25px;
@@ -184,7 +186,20 @@ header .device-container {
   margin: 0 auto 100px;
 }
 header .device-container .screen img {
-  border-radius: 3px;
+  position: relative
+}
+
+.img-responsive {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    float: right;
 }
 
 .device-mockup {
@@ -294,6 +309,9 @@ section.download .badges .badge-link img {
     font-size: 70px;
   }
 }
+section.features {
+background-color: #EEF2F3;
+}
 section.features .section-heading {
   margin-bottom: 100px;
 }
@@ -343,7 +361,7 @@ section.cta {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('/assets/new_age/bg-tri.jpg');
+  background-image: asset-url('bg-tri.jpg');
   padding: 250px 0;
 }
 section.cta .cta-content {
@@ -435,8 +453,8 @@ footer ul li a.active {
 }
 .bg-primary {
   background: #fdcc52;
-  background: -webkit-linear-gradient(#fdcc52, #fdc539);
-  background: linear-gradient(#fdcc52, #fdc539);
+  background: -webkit-linear-gradient(#fdcc52, #52fd5a);
+  background: linear-gradient(#fdcc52, #52fd5a);
 }
 .text-primary {
   color: #fdcc52;
@@ -489,3 +507,4 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+

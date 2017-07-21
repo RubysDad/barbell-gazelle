@@ -6,14 +6,16 @@
           <h2>I'm making progress!</h2>
             <hr class="small">
             <div class="row">
-              <div class="col-sm-12 col-md-4">
-                <div class="thumbnail">
-                  <%= @instagram.each do |instagram| %>
-                    <%= image_tag instagram.images.standard_resolution.url %>
-                    <%= video_tag instagram.images.standard_resolution.url %>
-                  <% end %>
-                  <p class="text-muted">New improvements everyday!</p>
+              <div class = "tagged-images-container-position">
+              <% @instagram.each do |instagram| %>
+                <div class="col-sm-12 col-md-3">
+                  <div class="thumbnail">
+                    <%= image_tag(instagram.images.standard_resolution.url, class: "tagged-images") %>
+                    <hr>
+                    <%= instagram.caption.text %> 
+                  </div>
                 </div>
+              <% end %>
               </div>
             </div>
           <hr>
