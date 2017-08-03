@@ -31,6 +31,8 @@ gem 'frontend-generators', '~> 0.2.0'
 
 gem 'instagram', '~> 1.1', '>= 1.1.6'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
+gem 'paperclip', '~> 5.1'
+gem 'mini_magick', '~> 4.8'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
